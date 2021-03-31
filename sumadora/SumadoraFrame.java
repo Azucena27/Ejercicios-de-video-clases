@@ -25,7 +25,7 @@ public class SumadoraFrame extends JFrame{
         super.setLayout(new BorderLayout());
         super.setLocationRelativeTo(null);
         
-       pnlBotones = new BotonesPnl(); 
+        pnlBotones = new BotonesPnl(); 
         pnlNumeros = new NumerosPnl();
   
         super.add(pnlBotones, BorderLayout.SOUTH);
