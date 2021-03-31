@@ -25,31 +25,7 @@ public class SumadoraFrame extends JFrame{
         super.setLayout(new BorderLayout());
         super.setLocationRelativeTo(null);
         
-       pnlBotones = new BotonesPnl();
-      /* pnlBotones.setListener(new BotonesPanelListener(){
-           /* @Override
-            public void calcularButtonClick(){
-             try{
-             Integer a = pnlNumeros.getNumero();
-             JOptionPane.showMessageDialog(
-                     SumadoraFrame.this,
-                     String.format("El resultado es: %d",a),
-                     JOptionPane.INFORMATION_MESSAGE);
-             }catch(NumeroIncorrectoException e){
-              JOptionPane.showMessageDialog(SumadoraFrame.this,e.getMessage(),"Error de conversión",JOptionPane.ERROR_MESSAGE);    
-             }
-            }----------
-            
-            @Override
-             public void limpiarButtonClick(){
-            pnlNumeros.limmpiarControles();
-            }
-            @Override
-             public void salirButtonClick(){
-               System.exit(0);
-            }
-        });*/
-        
+       pnlBotones = new BotonesPnl(); 
         pnlNumeros = new NumerosPnl();
   
         super.add(pnlBotones, BorderLayout.SOUTH);
